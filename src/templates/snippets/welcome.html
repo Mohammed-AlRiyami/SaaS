@@ -1,0 +1,8 @@
+<div>
+{%if request.user.is_authenticated %}
+    <p>Welcome back, {{request.user.username}}!</p>
+{%else%}
+    <p>Welcome! Please sign in.</p>
+{%endif%}
+
+</div>
