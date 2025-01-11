@@ -25,7 +25,7 @@ def about_view(request, *args, **kwargs):
         "total_visit_count": qs.count()
     }
     
-    PageVisit.objects.create(path=request.path,)
+    PageVisit.objects.create(path=request.path)
     return render(request, html_template, my_context)
 # def home_home_view(request, *args, **kwargs): 
 #     print(this_dir)
